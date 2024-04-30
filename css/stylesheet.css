@@ -1,0 +1,322 @@
+/** this is the main style sheet shared between all the pages **/
+body {
+    background-color: #292929;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  
+  main {
+    border: 0.3em solid grey;
+  }
+  
+  nav {
+    border: 0.3em solid grey;
+    flex-direction: column;
+  }
+  
+  aside {
+    border: 0.3em solid grey;
+  }
+  
+  #wrapper {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas:
+      "banner banner"
+      "menu nav"
+      "main main"
+      "aside aside"
+      "footer footer";
+  }
+  
+  
+  @media (min-width: 40em) {
+    #wrapper {
+      grid-template-columns: 0.3fr 3fr;
+      grid-template-areas:
+       "banner banner"
+       "menu menu"
+       "nav table"
+       "nav main"
+       "aside aside"
+       "footer footer";
+    }
+  }
+  
+  
+  .banner {
+    grid-area: banner;
+    display: inline;
+  }
+  
+  .menu {
+    grid-area: menu;
+  }
+  main {
+    grid-area: main;
+    display: inline;
+  }
+  
+  article {
+  }
+  
+  aside {
+    grid-area: aside;
+  }
+  
+  footer {
+    grid-area: footer;
+    display: inline;
+  }
+  
+  table {
+      grid-area: table;
+      display: inline;
+  }
+  
+  header {
+  }
+  
+  .post {
+    display: inline;
+  }
+  
+  nav {
+    grid-area: nav;
+    display: inline;
+  }
+  
+  /*headings------------------------------------------------------------------- */
+  h1	{
+      font-family: 'Strait', sans-serif;
+      color: #FFA500;
+      font-size: 3em;
+      line-height: 2em;
+      border: 1px solid #555;
+  
+  }
+  h2	{
+      font-family: Georgia, "Times New Roman", Verdana;
+      color: #FFF;
+      font-size: 1.5em;
+      line-height: 1.5em; 
+      border: 0.5px solid #555;
+  }
+  h3	{
+      font-family: 'Strait', sans-serif;
+      font-size: 1.5em;
+      color: #FFF;
+      line-height: 1.7em;
+  }
+  h3.dropcap:first-letter	{
+    float: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #FFF;
+    font-size: 4em;
+    line-height: 0.2em;
+  }
+  h4	{
+      font-family: 'Strait', sans-serif;
+      font-size: 1.3em;
+      color: #FFF;
+      line-height: 1.7em;
+  }
+  /*grouping------------------------------------------------------------------- */
+  p	{
+   font-size:1.25em;
+   line-height: 1.25em; 
+   font-family: Georgia, "Times New Roman", Verdana;
+   color: #CDC;
+  }
+  
+  p.dropcap:first-letter	{
+    float: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color:#F00;
+    font-size: 5em;
+    line-height: 0.2em;
+    margin: 8px 5px 0 0;
+  }
+  table, th,td{
+      font-family: 'Strait', sans-serif;
+      font-size: 1.3em;
+      color: #FFF;
+      line-height: 1em;
+      border: .05em solid grey;
+  }
+  
+  blockquote	{
+  
+  }
+  /*lists---------------------------------------------------------------------- */
+  ul	{
+  }
+  li	{
+      font-size:1.25em;
+      margin: 0.3em;
+      font-family: Georgia, "Times New Roman", Verdana;
+      color: #CDC;
+      line-height: 1em; 
+  }
+  
+  ol	{
+  }
+  dl	{
+  }
+  dt	{
+  }
+  dd	{
+  }
+  /*text------------------------------------------------------------------------ */
+  em	{
+  }
+  strong	{
+  }
+  small	{
+   font-size:1em;
+   line-height: 0.5; 
+   font-family: Georgia, "Times New Roman", Verdana;
+   color: #CDC;
+   line-height: 16px; 
+  }
+  cite	{
+  }
+  time	{
+  }
+  
+  /*Contact ------------------------------------------------------------------*/
+  label {display: block;}
+  input {display: block;}
+  /*image----------------------------------------------------------------------- */
+  figure	{
+  }
+  figcaption	{
+  }
+  img	{max-width:100%;
+  }
+  .fltlt img{
+   float: right;
+   margin-left: 8px;
+  }
+  .fltlt a{
+   float: right;
+   margin-left: 8px; 
+  }
+  .fltlt small{
+   float: right;
+   margin-left: 8px; 
+  }
+  
+  .clear {
+   clear: both;
+  }
+  /*video----------------------------------------------------------------------- */
+  .video-wrapper {
+    max-width: 4em;
+    margin: 0 auto;
+  }
+  iframe{
+    width: 100%;
+    height: auto;
+  }
+  .video-container {
+    position: absolute;
+    padding-bottom: 56.25%; /*16:9 */
+    height: 0; 
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*cards---------------------------------------------------------------------*/
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    display: flex; 
+  }
+  .card-content {
+    flex-direction: column;
+    width: 100%;
+    border: 4px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 1.25em 1.25em 0.3em 0;
+    padding: 1em;
+  }
+  
+  /*640 px - tablet portrait orientation - 2 columns*/
+  @media screen and (min-width: 40em){
+    .card { width: 50%; }
+  }
+  /*960 px* - tablet landscape orientation and above - 3 columns*/
+  @media screen and (min-width: 60em) {
+    .card { width: 33.33%; }
+  }
+  
+  /*anchors--------------------------------------------------------------------- */
+  .buttona{ 
+  
+    border: 2px solid #cdc;
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+  
+    background-color: #2e2e2e; 
+    background-clip: padding-box;
+  
+    color: #FFA500;
+    font-family: Georgia, "Times New Roman", Verdana; 
+    font-weight: bold; 
+    text-decoration: none;
+  }
+  
+  .buttona:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .buttona:active {
+  
+    background-color: #f1f1f1;
+  }
+  
+  
+  
+  .linka{
+      color: #FFA500;
+      margin-bottom: 0.2em;
+  }
+  
+  input:required {
+    background-color: #96413F;
+  }
+  #send{
+  
+    border: 2px solid #cdc; 
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+  }
+  /*Overriding-----------------------------------------------------------------*/
+  @media (max-width: 40em) {
+   table {
+    display:none;
+   }
+   .buttona{
+    flex-wrap: wrap;
+   }
+  }
+  
