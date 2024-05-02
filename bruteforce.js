@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
             count = run(input, count); //this runs the program 
         } else {
             // Handle 'y' or 'n' input after 3 failed attempts
-            valid = tooManyAttempts(input); //this runs a program to check on the user if they need help
+            valid = tooManyAttempts(input.toLowerCase()); //this runs a program to check on the user if they need help
             if(valid){
                 count = 0; //reset the count once a user has answered.
             }
