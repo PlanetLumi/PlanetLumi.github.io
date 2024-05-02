@@ -113,6 +113,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('submitButton').addEventListener('click', function() {
         clearLog();
         const input = handleInput(); //takes in user input
+        if(input == ""){
+            return;
+        }
         if (count < 3) {
             count = run(input, count); //this runs the program 
         } else {
