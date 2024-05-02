@@ -94,7 +94,7 @@ function clearLog() {
 function tooManyAttempts(input) {
     valid = false;
     if (input === 'y') {
-        console.log("Here is a page for information on how to improve your password: [Link to password tips]");
+        console.log("Here is a page for information on how to improve your password: https://planetlumi.github.io/password.html");
         valid = true;
     } else if (input === 'n') {
         console.log("Continuing without further help. Please enter a different password.");
