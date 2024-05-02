@@ -7,7 +7,6 @@ var userPassword = ""; var count = 0;
 function bruteForce(userPassword, passwords, count) {
     console.log("Round one complete!")//Splash text for the children =D
     check = userPassword.toLowerCase(); //this makes it easier to run through array
-    var isCommonPassword = passwords.some(pw => check.includes(pw.toLowerCase())); //this allows me to see if its just a adapted password by iterating through a substring of passwords
     if (check.includes("password")){
         console.log("Common Password Found!");
         console.log(userPassword);
@@ -16,7 +15,7 @@ function bruteForce(userPassword, passwords, count) {
         return count;
     }
     console.log("Round two complete!");
-    if (isCommonPassword) {
+    if (check.includes(passwords)){
             console.log("Common Password Found!");
             console.log(userPassword);
             console.log("Try to make your password harder, such as adding a number to the end of your words.");
