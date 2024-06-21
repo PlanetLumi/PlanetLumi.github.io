@@ -165,8 +165,8 @@ a:hover {
 
 /* Lists */
 ul, ol {
-  margin: 20px 0;
-  padding-left: 40px;
+  margin: 0.5em;
+  padding-left: 1em;
 }
 
 ul li {
@@ -179,14 +179,16 @@ ul li {
 ol li {
   font-size: 1.1em;
   color: #343a40;
-  margin: 10px 0;
+  margin: 0.5em;
+  padding-left: 1em;
   list-style-type: decimal;
 }
 
 ul.custom-list li::before {
   content: '✔'; /* Custom icon */
   color: #28a745;
-  margin-right: 10px;
+  margin: 0.5em;
+  padding-left: 1em;
 }
 
 blockquote {
