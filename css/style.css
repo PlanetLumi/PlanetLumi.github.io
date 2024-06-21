@@ -1,7 +1,14 @@
 @media (max-width: 768px) {
-  nav {
-      flex-direction: column;
+  #wrapper {
+    grid-template-columns: 2fr 0.5fr;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "aside aside"
+    "footer footer";
   }
+
 
   nav a {
       margin: 10px 0;
