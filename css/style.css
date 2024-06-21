@@ -47,6 +47,7 @@ nav a:hover {
 
 /* Main Content */
 main {
+  background-color: #292a2b;
   padding: 20px;
   text-align: center;
 }
