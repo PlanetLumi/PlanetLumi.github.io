@@ -49,7 +49,7 @@ nav a:hover {
 main {
   background-color: #292a2b;
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Buttons */
@@ -177,7 +177,7 @@ ul li {
   line-height: 1.6;
   color: #f0e6e6; /* Dark gray for readability */
   margin: 10px 0 20px 0;
-  text-align: justify;
+  text-align: left;
 }
 
 ol li {
@@ -186,7 +186,7 @@ ol li {
   line-height: 1.6;
   color: #f0e6e6; /* Dark gray for readability */
   margin: 10px 0 20px 0;
-  text-align: justify;
+  text-align: left;
 }
 
 ul.custom-list li::before {
