@@ -117,7 +117,7 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   line-height: 1.6;
-  color: #343a40; /* Dark gray for readability */
+  color: #f0e6e6; /* Dark gray for readability */
   margin: 10px 0 20px 0;
   text-align: justify;
 }
@@ -125,7 +125,7 @@ p {
 p.lead {
   font-size: 1.25em;
   font-weight: bold;
-  color: #007bff; /* Bright blue */
+  color: #f0e6e6; /* Bright blue */
   margin-bottom: 25px;
 }
 
@@ -154,13 +154,13 @@ input[type="submit"]:hover {
 
 /* Links */
 a {
-  color: #007bff;
+  color: #f0e6e6;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: #28a745;
+  color: #f0e6e6;
   text-decoration: underline;
 }
 
@@ -174,7 +174,7 @@ ul li {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   line-height: 1.6;
-  color: #343a40; /* Dark gray for readability */
+  color: #f0e6e6; /* Dark gray for readability */
   margin: 10px 0 20px 0;
   text-align: justify;
 }
@@ -183,7 +183,7 @@ ol li {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   line-height: 1.6;
-  color: #343a40; /* Dark gray for readability */
+  color: #f0e6e6; /* Dark gray for readability */
   margin: 10px 0 20px 0;
   text-align: justify;
 }
@@ -199,7 +199,7 @@ blockquote {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   font-style: italic;
-  color: #555;
+  color: #f0e6e6;
   border-left: 5px solid #007bff;
   margin: 20px 0;
   padding: 10px 20px;
